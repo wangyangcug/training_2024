@@ -41,6 +41,7 @@ public class MemInfo {
             throw new RuntimeException(e);
         }
         return 1.0-freeMem/(double)totalMem;
+//        return 31.1;
     }
 
     private long parseLine(String line) {

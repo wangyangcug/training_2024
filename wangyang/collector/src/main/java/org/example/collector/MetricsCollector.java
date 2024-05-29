@@ -34,6 +34,7 @@ public class MetricsCollector {
             public void run() {
                 try {
                     collectMetricsInfo();
+//                    System.out.println("发送成功");
                 }catch (Exception e){
                     throw new RuntimeException(e);
                 }
@@ -71,35 +72,32 @@ public class MetricsCollector {
         sendPost(jsonArray);
 
     }
-    public static void sendPost(JSONArray metrics) throws IOException {
-        // 创建url资源
-        URL url = new URL(SERVER_URL);
-        // 建立http连接
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        // 设置允许输出
-        conn.setDoOutput(true);
-        // 设置允许输入
-        conn.setDoInput(true);
-        // 设置传递方式
-        conn.setRequestMethod("POST");
-        // 设置维持长连接
-        conn.setRequestProperty("Connection", "Keep-Alive");
-        // 设置文件字符集:
-        conn.setRequestProperty("Charset", "UTF-8");
-        // 转换为字节数组
-        byte[] data = metrics.toString().getBytes();
-        // 设置文件长度
-        conn.setRequestProperty("Content-Length", String.valueOf(data.length));
-        // 设置文件类型:
-        conn.setRequestProperty("Content-Type", "application/json");
-        // 开始连接请求
-        conn.connect();
-        OutputStream out = new DataOutputStream(conn.getOutputStream()) ;
-        // 写入请求的字符串
-        out.write(data);
-        out.flush();
-        //关闭连接
-        out.close();
-        conn.disconnect();
+    public static void sendPost(JSONArray metrics) throws Exception {
+
+        try {
+            URL url = new URL(SERVER_URL);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            // 设置请求方法为 POST
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setDoOutput(true);
+
+
+            // 发送 JSON 数据
+            try(OutputStream os = connection.getOutputStream()) {
+                byte[] input = metrics.toString().getBytes("utf-8");
+                os.write(input, 0, input.length);
+            }
+
+            // 获取响应
+            int responseCode = connection.getResponseCode();
+            System.out.println("Response Code: " + responseCode);
+
+            connection.disconnect();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

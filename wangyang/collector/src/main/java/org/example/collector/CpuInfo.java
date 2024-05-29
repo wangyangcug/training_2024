@@ -64,5 +64,6 @@ public class CpuInfo {
         long total=time[0]-lastCpuTime[0];
         lastCpuTime=time;
         return 1-idle/(double)total;
+//        return 30.0;
     }
 }

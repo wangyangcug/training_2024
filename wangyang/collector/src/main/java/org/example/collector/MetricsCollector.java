@@ -4,13 +4,10 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
 
-import java.io.DataOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.net.URL;
-import java.net.UnknownHostException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -55,14 +52,14 @@ public class MetricsCollector {
         cpuJson.put("endpoint",ip);
         cpuJson.put("timestamp",System.currentTimeMillis());
         cpuJson.put("step",60);
-        cpuJson.put("value",cpuUse);
+        cpuJson.put("value",String.format("%.1f",cpuUse));
 
         JSONObject memJson = new JSONObject();
         memJson.put("metric","mem.used.percent");
         memJson.put("endpoint",ip);
         memJson.put("timestamp",System.currentTimeMillis());
         memJson.put("step",60);
-        memJson.put("value",memUse);
+        memJson.put("value",String.format("%.1f",memUse));
 
         //将获取到的信息装入JSON数组
         JSONArray jsonArray = new JSONArray();

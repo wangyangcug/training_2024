@@ -2,6 +2,7 @@ package com.example.collector_all;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.example.collector_all.collector.LogCollector;
 import com.example.collector_all.utils.FileListener;
 import com.example.collector_all.utils.FileMonitor;
 import com.example.collector_all.utils.LoadConfig;
@@ -39,6 +40,12 @@ public class FileTest {
         }
         System.out.println(storage);
 
+    }
 
+    @Test
+    void test3() throws Exception {
+        LogCollector collector = new LogCollector();
+        collector.logCollector("D:\\training_2024\\wangyang\\collector_all\\src\\main\\resources\\cfg.json");
+        TimeUnit.HOURS.sleep(1);
     }
 }

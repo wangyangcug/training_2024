@@ -11,12 +11,24 @@ import java.util.TimerTask;
 public class CollectorAllApplication {
 
     public static void main(String[] args) throws Exception {
-
+//        System.out.println("哈哈哈");
         SpringApplication.run(CollectorAllApplication.class, args);
 
         LogCollector collector = new LogCollector();
         collector.logCollector("D:\\training_2024\\wangyang\\collector_all\\src\\main\\resources\\cfg.json");
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                try {
+                    collector.collectorLog();
+                    System.out.println("发送成功");
+                }catch (Exception e){
+                    throw new RuntimeException(e);
+                }
 
+            }
+        },10000,5000);
 
     }
 

@@ -1,12 +1,16 @@
 package com.example.collector_all.utils;
 
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.example.collector_all.collector.LogCollector;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.monitor.FileAlterationListenerAdaptor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
 
 import java.io.*;
+import java.net.InetAddress;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -20,21 +24,32 @@ import java.util.logging.Logger;
  * @Create 2024/6/3 16:26
  * @Version 1.0
  */
+@Data
 @Slf4j
 public class FileListener extends FileAlterationListenerAdaptor {
 
+//    private static FileListener listener=new FileListener();
     // 存放每个文件上一次的已经读取了的指针位置
     private static Map<String,Long> lastPosition = new HashMap<>();
 
+    public static JSONArray tmpjson=new JSONArray();
+
+    public static Map<String,JSONObject> tmpObject = new HashMap<>();
     private  String JsonPath;
 
     public FileListener(String jsonPath) {
         JsonPath = jsonPath;
     }
-    public FileListener() {
+
+
+
+
+    public  FileListener (){
+
     }
+    public static void setTmpJson(){
 
-
+    }
     /**
      * @param observer
      */
@@ -111,14 +126,24 @@ public class FileListener extends FileAlterationListenerAdaptor {
                     // 对新增的内容进行处理
                     str.append(line);
                 }
-                //获取配置策略
-                LoadConfig loadConfig = new LoadConfig();
-                Map<String, Object> jsonFile = loadConfig.parseJsonFile(JsonPath);
-                String storage = (String)jsonFile.get("log_storage");
-                //根据配置的策略进行存储
-//                System.out.println(str);
-                LogCollector collector = new LogCollector();
-                collector.savelogs(str.toString(),storage,path);
+                //将新增内容封装到json数组,先判断tmpObject集合里是否有该对象，如果有，则直接封装新增日志内容到json数组对应的对象中，
+                // 如果没有创建jsonobject对象，放入集合中，并为对象设置值加入到json数组中。
+                if(tmpObject.containsKey(path)){
+                    JSONObject jsonObject = tmpObject.get(path);
+                    JSONArray logs =(JSONArray)jsonObject.get("logs");
+                    logs.add(str);
+                    jsonObject.put("logs",logs);
+                }else{
+                    JSONObject object = new JSONObject();
+                    String ip = InetAddress.getLocalHost().getHostAddress();
+                    object.put("hostname",ip);
+                    object.put("file",path);
+                    object.put("logs",new JSONArray(Collections.singletonList(str)));
+                    tmpObject.put(path,object);
+                    tmpjson.add(object);
+                }
+//                System.out.println(tmpjson);
+
                 //更新文件记录到的位置
                 lastPosition.put(path,randomAccessFile.getFilePointer());
             }
@@ -127,6 +152,14 @@ public class FileListener extends FileAlterationListenerAdaptor {
         }
 
 
+    }
+    public static void clear(){
+       tmpjson=new JSONArray();;
+       tmpObject=new HashMap<>();
+    }
+
+    public static JSONArray getJsonArray(){
+        return tmpjson;
     }
 
     /**

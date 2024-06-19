@@ -1,0 +1,2 @@
+D:\training_2024\wangyang\collector_all\src\main\resources\test\a.log,10
+D:\training_2024\wangyang\collector_all\src\main\resources\test\b.log,7

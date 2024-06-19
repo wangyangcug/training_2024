@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="faca9726-7c89-4fd4-bfb5-f962bad8cace" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../collector/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/CpuInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/MemInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/MetricsCollector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/CollectorAllApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/CollectorAllApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/collector/LogCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/collector/LogCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/utils/FileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/Listener/FileListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/utils/FileMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/java/com/example/collector_all/Listener/FileMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/resources/test/a.log" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/resources/test/a.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/main/resources/test/b.log" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/main/resources/test/b.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector_all/src/test/java/com/example/collector_all/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../collector_all/src/test/java/com/example/collector_all/FileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/Work1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Metric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/controller/LogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/controller/MetricController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/handler/StringArrayTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/mapper/LogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/mapper/MetricMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/Imp/LogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/Imp/MetricServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/LogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/MetricService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/utils/StringArrayToStringConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/mapper/LogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/mapper/MetricMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/test/java/com/xiaomi/work1/StringArrayConverterSpringBootTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Tools\Maven\maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Tools/Maven/apache-maven-3.9.0" />
+        <option name="userSettingsFile" value="D:\Tools\Maven\apache-maven-3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2i5eP8QikUzPPAlyT3ug3b7xyWJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/training_2024/wangyang/code_study_demo",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="faca9726-7c89-4fd4-bfb5-f962bad8cace" name="变更" comment="" />
+      <created>1718784838933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718784838933</updated>
+      <workItem from="1718784840638" duration="781000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

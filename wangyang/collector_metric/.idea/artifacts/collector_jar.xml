@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="collector:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/collector_jar</output-path>
+    <root id="archive" name="collector.jar">
+      <element id="module-output" name="collector" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Tools/Maven/maven-repository/com/alibaba/fastjson/1.2.58/fastjson-1.2.58.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

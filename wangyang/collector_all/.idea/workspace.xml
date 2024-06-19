@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57fd90fd-2dd6-468f-815c-bc7d7b807659" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../collector/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/CpuInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/MemInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/main/java/org/example/collector/MetricsCollector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../collector/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/Work1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Log.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Metric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/bean/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/controller/LogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/controller/MetricController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/handler/StringArrayTypeHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/mapper/LogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/mapper/MetricMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/Imp/LogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/Imp/MetricServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/LogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/service/MetricService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/java/com/xiaomi/work1/utils/StringArrayToStringConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/mapper/LogMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/main/resources/mapper/MetricMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../work1/src/test/java/com/xiaomi/work1/ElasticsearchTemplateTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Tools\Maven\maven-repository" />
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Tools\Maven\apache-maven-3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2hMOvbfZvXWnqoyDthmfQrkWkOj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/training_2024/wangyang/server&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;67981152a0807d74e2cc0136cd164b23&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\training_2024\wangyang\collector_all\src\main\java\com\example\collector_all\metrics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CollectorAllApplication">
+    <configuration name="FileTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collector_all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.collector_all.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.collector_all" />
+      <option name="MAIN_CLASS_NAME" value="com.example.collector_all.FileTest" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collector_all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.collector_all.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.collector_all" />
+      <option name="MAIN_CLASS_NAME" value="com.example.collector_all.FileTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collector_all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.collector_all.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.collector_all" />
+      <option name="MAIN_CLASS_NAME" value="com.example.collector_all.FileTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collector_all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.collector_all.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.collector_all" />
+      <option name="MAIN_CLASS_NAME" value="com.example.collector_all.FileTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="collector_all" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.collector_all.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.collector_all" />
+      <option name="MAIN_CLASS_NAME" value="com.example.collector_all.FileTest" />
+      <option name="METHOD_NAME" value="test7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectorAllApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="collector_all" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.collector_all.CollectorAllApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.FileTest.test7" />
+      <item itemvalue="JUnit.FileTest.test3" />
+      <item itemvalue="JUnit.FileTest.test4" />
+      <item itemvalue="JUnit.FileTest.test5" />
+      <item itemvalue="JUnit.FileTest.test6" />
+      <item itemvalue="Spring Boot.CollectorAllApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FileTest.test7" />
+        <item itemvalue="JUnit.FileTest.test4" />
+        <item itemvalue="JUnit.FileTest.test3" />
+        <item itemvalue="JUnit.FileTest.test6" />
+        <item itemvalue="JUnit.FileTest.test5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="57fd90fd-2dd6-468f-815c-bc7d7b807659" name="变更" comment="" />
+      <created>1717400711182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717400711182</updated>
+      <workItem from="1717400712670" duration="57368000" />
+      <workItem from="1718105142717" duration="87000" />
+      <workItem from="1718105301612" duration="12131000" />
+      <workItem from="1718337805732" duration="16193000" />
+      <workItem from="1718785860152" duration="1796000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

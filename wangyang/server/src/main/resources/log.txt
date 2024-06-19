@@ -1,0 +1,14 @@
+Log{hostname='my-computer', file='/home/work/a.log', logs=[2024-05-16 10:11:51 +08:00 This is a log, 2024-05-16 10:11:51 +08:00 This is another log]}
+Log{hostname='my-computer', file='/home/work/b.log', logs=[2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused, 2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused]}
+Log{hostname='my-computer', file='/home/work/a.log', logs=[2024-05-16 10:11:51 +08:00 This is a log, 2024-05-16 10:11:51 +08:00 This is another log]}
+Log{hostname='my-computer', file='/home/work/b.log', logs=[2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused, 2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused]}
+Log{hostname='my-computer', file='/home/work/a.log', logs=[2024-05-16 10:11:51 +08:00 This is a log, 2024-05-16 10:11:51 +08:00 This is another log]}
+Log{hostname='my-computer', file='/home/work/b.log', logs=[2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused, 2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused]}
+Log{hostname='my-computer', file='/home/work/a.log', logs=[2024-05-16 10:11:51 +08:00 This is a log, 2024-05-16 10:11:51 +08:00 This is another log]}
+Log{hostname='my-computer', file='/home/work/b.log', logs=[2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused, 2024-05-16 10:11:51 +08:00 ERROR tcp_ping::metric src/metric.rs:95 -Report one chunk done, error: Connection refused]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\a.log', logs=[aaa]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\b.log', logs=[bbb]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\a.log', logs=[aaaaa]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\b.log', logs=[22]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\a.log', logs=[新增数据]}
+Log{hostname='172.27.72.1', file='D:\training_2024\wangyang\collector_all\src\main\resources\test\b.log', logs=[新增]}

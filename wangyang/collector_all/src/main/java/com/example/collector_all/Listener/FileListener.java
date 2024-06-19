@@ -32,8 +32,10 @@ public class FileListener extends FileAlterationListenerAdaptor {
     // 存放每个文件上一次的已经读取了的指针位置
     private static Map<String,Long> lastPosition = new HashMap<>();
 
+    //临时Json数组
     public static JSONArray tmpjson=new JSONArray();
 
+    //根据文件名创建对象
     public static Map<String,JSONObject> tmpObject = new HashMap<>();
     private  String JsonPath;
 
@@ -108,7 +110,7 @@ public class FileListener extends FileAlterationListenerAdaptor {
         // TODO:检测新增内容，以指定方式存储
         long tempPosition = 0;
         String path = file.getPath();
-        System.out.println(path);
+
         //若集合里没有文件名称，则证明第一次改动，将文件名称加入到集合中，有的话则拿到上一次读取到的位置
         if(lastPosition.containsKey(path)){
             tempPosition=lastPosition.get(path);

@@ -11,9 +11,7 @@ import java.util.TimerTask;
 public class CollectorAllApplication {
 
     public static void main(String[] args) throws Exception {
-//        System.out.println("哈哈哈");
         SpringApplication.run(CollectorAllApplication.class, args);
-
         LogCollector collector = new LogCollector();
         collector.logCollector("D:\\training_2024\\wangyang\\collector_all\\src\\main\\resources\\cfg.json");
         Timer timer = new Timer();
@@ -28,7 +26,7 @@ public class CollectorAllApplication {
                 }
 
             }
-        },10000,5000);
+        },0,10000);
 
     }
 

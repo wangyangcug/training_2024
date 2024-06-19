@@ -1,13 +1,14 @@
 package com.example.collector_all;
 
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
 import com.example.collector_all.collector.LogCollector;
-import com.example.collector_all.utils.FileListener;
-import com.example.collector_all.utils.FileMonitor;
+import com.example.collector_all.Listener.FileListener;
+import com.example.collector_all.Listener.FileMonitor;
 import com.example.collector_all.utils.LoadConfig;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -80,5 +81,23 @@ public class FileTest {
     void test6() throws Exception {
         LogCollector collector = new LogCollector();
         collector.collectorLog();
+    }
+
+    /**
+     * 测试使用不同的策略存储
+     * @throws Exception
+     */
+    @Test
+    void test7() throws Exception {
+        LogCollector collector = new LogCollector();
+        String filePath = "D:\\training_2024\\wangyang\\collector_all\\src\\main\\resources\\tmp.json";
+
+        // 使用 ObjectMapper 读取 JSON 文件
+        ObjectMapper objectMapper = new ObjectMapper();
+        JSONArray logs = objectMapper.readValue(new File(filePath), JSONArray.class);
+//        String storage = "elasticsearch";
+        String storage = "local_file";
+//        String storage = "mysql";
+        collector.sendLogToServer( logs,  storage);
     }
 }

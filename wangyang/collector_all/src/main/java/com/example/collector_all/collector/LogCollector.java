@@ -1,13 +1,10 @@
 package com.example.collector_all.collector;
 
 import com.alibaba.fastjson.JSONArray;
-import com.example.collector_all.utils.FileListener;
-import com.example.collector_all.utils.FileMonitor;
+import com.alibaba.fastjson.JSONObject;
+import com.example.collector_all.Listener.FileListener;
+import com.example.collector_all.Listener.FileMonitor;
 import com.example.collector_all.utils.LoadConfig;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
@@ -30,7 +27,7 @@ public class LogCollector {
 //    private final static String SERVER_URL="http://172.27.72.128:8080/api/metric/upload";
     private final static String SERVER_URL="http://localhost:8080/api/log/upload";
     //TODO:加载配置文件，获取需要收集的日志文件配置文件监听器
-
+    private String storage="";
     public void logCollector(String path) throws Exception {
         LoadConfig loadConfig = new LoadConfig();
         Map<String, Object> jsonFile = loadConfig.parseJsonFile(path);
@@ -42,7 +39,7 @@ public class LogCollector {
             break;
         }
         String folderPath = new File(fileFolder).getParent();
-        String storage = (String)jsonFile.get("log_storage");
+        storage = (String)jsonFile.get("log_storage");
 
         //根据日志文件配置文件监听器
         ListenerFile(folderPath,path,1000L);
@@ -64,19 +61,18 @@ public class LogCollector {
     public void collectorLog(){
         //读取json数组
         JSONArray logs=readJsonFile();
-        //发送到服务端
+        //发送数据和存储策略到服务端
         if(logs!=null){
-            sendLogToServer(logs);
+            sendLogToServer(logs,storage);
         }
 
 
         //清除已有信息
         FileListener.clear();
 
-        System.out.println( FileListener.getJsonArray());
     }
 
-    private void sendLogToServer(JSONArray logs) {
+    public void sendLogToServer(JSONArray logs, String storage) {
         try {
             URL url = new URL(SERVER_URL);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -86,10 +82,16 @@ public class LogCollector {
             connection.setRequestProperty("Content-Type", "application/json");
             connection.setDoOutput(true);
 
+            // 构建 JSON 对象
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("logs", logs);
+            jsonObject.put("storageType", storage);
 
+            // 将 JSON 对象转换为字符串
+            String jsonString = jsonObject.toString();
             // 发送 JSON 数据
             try(OutputStream os = connection.getOutputStream()) {
-                byte[] input = logs.toString().getBytes("utf-8");
+                byte[] input = jsonString.getBytes("utf-8");
                 os.write(input, 0, input.length);
             }
 
@@ -121,7 +123,7 @@ public class LogCollector {
 //        return jsonArray;
 
         JSONArray tmpjson = FileListener.getJsonArray();
-        log.info("哈哈");
+
 
         if(!tmpjson.isEmpty()){
             return tmpjson;
